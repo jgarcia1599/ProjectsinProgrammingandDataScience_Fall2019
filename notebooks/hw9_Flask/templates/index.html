@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Summary</th>
+        <th>Published</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in df %}
+    <tr>
+        <td>{{ df.Title}}</td>
+        <td>{{ df.Summary }}</td>
+        <td>{{ df.Published}}</td>
+    </tr>
+      {% endfor %}
+    </tbody> 
+  </table>
+</body>
+</html>
